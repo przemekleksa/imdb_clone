@@ -1,0 +1,16 @@
+#nav {
+    padding: 20px 0;
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .left {
+            display:flex;
+            align-items: center;
+            .logo {
+                left: 30px;
+                margin: 0 0 0 30px;
+            }
+        }
+    }
+}

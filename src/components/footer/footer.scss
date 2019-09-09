@@ -1,0 +1,36 @@
+footer { 
+    background-color: #333037;
+    padding: 20px 0;
+    margin: 150px 0 0 0;
+    .container {
+            display:flex;
+            justify-content: space-between;
+            align-items: center;
+            color: rgb(177, 177, 177);
+            .left {
+                ul {
+                    list-style: none;
+                    margin: 0;
+                    padding: 0;
+                    display: flex;
+                    li {
+                        margin: 0 15px 0 0;
+                        a {
+                            text-decoration: none;
+                            color: rgb(177, 177, 177);
+                            transition: .5s all;
+                            &:hover {
+                                color: rgb(204, 99, 0);
+                            }
+                        }
+                        &:last-child(){
+                            margin: 0;
+                        }
+                    }
+                }
+            }
+            .right {
+
+            }
+        }
+}

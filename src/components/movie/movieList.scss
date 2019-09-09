@@ -1,0 +1,41 @@
+.movie-item {
+    width: 20%;
+    padding: 0 15px;
+    .poster {
+        margin: 0 0 20px 0;
+        a {
+            display: block;
+            overflow: hidden;
+            &:hover {
+                img {
+                    transform: scale(1.2)
+                }
+            }
+
+            img {
+                display:block;
+                width: 100%;
+                height: auto;
+                transition: .4s all;
+            }
+        }
+    }
+    .title {
+        a{
+            text-decoration: none;
+            transition: .4s all;
+            color: black; 
+            &:hover {
+                color: #cc8500;
+            }
+            h2 {
+                overflow: hidden;
+                text-overflow: ellipsis;
+                display:block;
+                white-space: nowrap;
+                font-size: 20px;
+            }
+        }
+       
+    }
+}

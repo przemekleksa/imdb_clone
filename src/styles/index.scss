@@ -1,0 +1,17 @@
+@import 'normalizer';
+@import 'variables';
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,700|Open+Sans:300,400,700&display=swap&subset=latin-ext');
+@import "~react-toastify/dist/ReactToastify";
+
+body {
+    font-family: $font-open;
+    font-size: 16px;
+    color: $primary-color;
+}
+
+.container {
+    max-width: 1170px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+}

@@ -1,0 +1,12 @@
+.heart {
+    cursor: pointer;
+    &.in-progress {
+        fill: orange !important;
+    }
+    &.red {
+        fill: red;
+    }
+    &.black {
+        fill: black;
+    }
+}

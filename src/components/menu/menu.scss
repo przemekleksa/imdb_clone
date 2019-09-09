@@ -1,0 +1,111 @@
+@import "../../styles/variables";
+
+.hamburger {
+    height: 20px;
+    width: 30px;
+    border: none;
+    background-color: transparent;
+    position: relative;
+    cursor: pointer;
+    span {
+        display: block;
+        height: 3px;
+        width: 100%;
+        background-color: #000;
+        position: absolute;
+        &:nth-child(1) {
+            top: 0px;
+            left: 0px;
+        }
+        &:nth-child(2) {
+            top: 50%;
+            transform: translateY(-50%);
+            left: 0px;
+        }
+        &:nth-child(3) {
+            bottom: 0px;
+            left: 0px;
+        }
+    }
+}
+
+.menu {
+    position: fixed;
+    width: 400px;
+    left: -400px;
+    top: 0;
+    background-color: rgba(184, 0, 0, 0.897);
+    height:100%;
+    transition: 1s all;
+    z-index: 4;
+    &.open{
+        left: 0;
+    }
+    .close {
+        background-color: #000;
+        position: absolute;
+        right: 0;
+        top: 0;
+        height: 40px;
+        width: 40px;
+        border: none;
+        cursor: pointer;
+        span {
+            background-color: #fff;
+            position: absolute;
+            width: 80%;
+            height: 3px;
+          
+            &:nth-child(1) {
+                transform: rotate(45deg);
+                top: 18px;
+                left: 5px;
+            }
+            &:nth-child(2) {
+                transform: rotate(135deg);
+                top: 18px;
+                left: 5px;
+            }
+        }
+       
+    }
+    nav {
+        ul {
+            list-style: none;
+            margin: 60px 15px;
+            padding: 0;
+            li {
+                margin: 0 0 15px 0;
+                &:last-child{
+                    margin: 0;
+                }
+                a {
+                    text-decoration: none;
+                    font-weight: 400;
+                    color: $primary-color;
+                    letter-spacing: 4px;
+                    position: relative;
+                    padding: 0 0 0 30px;
+                    display: block;
+                    &:hover{
+                        &:before {
+                            width: 30px;
+                        }
+                    }
+                    &:before {
+                        content: "";
+                        display: block;
+                        width: 15px;
+                        height: 2px;
+                        background: $primary-color;
+                        position: absolute;
+                        left: 0;
+                        top: 50%;
+                        transform: translateY(-50%);
+                        transition: .5s all;
+                    }
+                }
+            }
+        }
+    }
+}
